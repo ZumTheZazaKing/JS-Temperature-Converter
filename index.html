@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Temperature Converter</title>
+</head>
+<body>
+
+    <div id='container'>
+        <h1>Temperature Converter</h1>
+        <p id="instruct">Type in any of the fields for conversion</p>
+        <label>Celcius:</label>
+        <input type="number" id="inputCelcius" placeholder="Celcius"
+        oninput="temperatureConverterForCelcius(this.value)"
+        onchange="temperatureConverterForCelcius(this.value)">
+        <br><br>
+        <label>Fahrenheit:</label>
+        <input type="number" id="inputFahrenheit" placeholder="Fahrenheit"
+        oninput="temperatureConverterForFahrenheit(this.value)"
+        onchange="temperatureConverterForFahrenheit(this.value)">
+        <br><br>
+        <label>Kelvin:</label>
+        <input type="number" id="inputKelvin" placeholder="Kelvin"
+        oninput="temperatureConverterForKelvin(this.value)"
+        onchange="temperatureConverterForKelvin(this.value)">
+    </div>
+    
+</body>
+</html>
